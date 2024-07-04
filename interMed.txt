@@ -1,0 +1,12 @@
+1000         COPY        START         1000
+1000        THREE         BYTE        X'F1'
+1001			           STL
+1004			           STL
+1007			           STL
+100A       LENGHT         RESW            1
+100D       BUFFER         RESB         4096
+200D			           STL
+2010			           STL
+2013         FOUR          STL      THREE,X
+2016			          JSUB       FOUR,X
+				           END         COPY
